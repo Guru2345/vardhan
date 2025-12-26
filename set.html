@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>basic set methods</h1>
+        <p id="demo"></p>
+        <script>
+            const letter=new Set();
+            letter.add("a");
+            letter.add("b");
+            letter.add("c");
+            document.getElementById("demo").innerHTML=letter.size;
+            document.getElementById("demo").innerHTML=typeof letter;
+            document.getElementById("demo").innerHTML=letter instanceof Set;
+            let text="";
+            for(const x of letter){
+                text=text+x+"<br>";
+            }
+                    document.getElementById("demo").innerHTML=text;
+        </script>
+    </body>
+</html>
