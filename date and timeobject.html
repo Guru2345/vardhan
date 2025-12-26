@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <head>
+        <title>This is Date and Time</title>
+    </head>
+    <body>
+        <h1>This is Date and Time Object</h1>
+        <p id="dateAndTime"></p>
+        <script>
+            let now = new Date();
+            document.getElementById("dateAndTime").innerHTML =
+                "Current Date and Time: " + now + "<br>" +
+                "Year: " + now.getFullYear() + "<br>" +
+                "Time: " + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds() + "<br>" +
+                "Date: " + now.getDate() + "/" + (now.getMonth() + 1) + "/" + now.getFullYear();
+        </script>
+    </body>
+</html>
