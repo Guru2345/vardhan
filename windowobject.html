@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <title>This is Window Object</title>
+    </head>
+    <body>
+        <h2>This is Inner Width, Height, and Origin of the Window</h2>
+        <p id="demo">This is window object</p>
+        <button onclick="myFunction()">Try It</button>
+        <script>
+            let w = window.innerWidth;
+            let h = window.innerHeight;
+            let origin = window.location.origin;
+
+            function myFunction() {
+                const myWindow = window.open("https://www.tcs.com", "_blank", "width=500,height=500,top=100,left=100");
+                document.getElementById("demo").innerHTML = 
+                    "Width: " + w + "<br>" +
+                    "Height: " + h + "<br>" +
+                    "Origin: " + origin + "<br>" +
+                    "New Window: " + myWindow;
+            }
+        </script>
+    </body>
+</html>
