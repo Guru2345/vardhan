@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <title> css pseudo.element selector</title>
+        <style>
+            p::first-letter{
+                font-size: 2cm;
+                color: red;
+                font-weight: bold;
+            }
+            p::first-line{
+                color:blue;
+                font-size: bold;
+            }
+            h::after{
+                content:"";
+                color:gold;
+            }
+            section{
+                background-color: yellow;
+                color: black;
+            }
+            input::placeholder{
+                color: gray;
+                font-style: italic;
+            }
+
+            </style>
+    </head>
+    <body>
+        <h1>psedo elemnt example</h1>
+        <p>this is paragraph demonstaing the first letter of pseudo element</p>
+        <input type="text" name="username" placeholder="Enter your name">
+        <p>select some text to see the section effect::selection text</p>
+    </body>
+</html>
