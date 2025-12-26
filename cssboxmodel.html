@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <title>CSS Box Model Example</title>
+        <style>
+            .content-box {
+                width: 200px; 
+                height: 100px; 
+                background-color: lightgreen; 
+                border: 5px solid green; 
+                padding: 0; 
+                margin: 0; 
+            }
+
+            .padding-box {
+                width: 200px; 
+                height: 100px; 
+                background-color: lightyellow; 
+                border: 5px solid orange; 
+                padding: 20px; 
+                margin: 0; 
+            }
+
+            .border-box {
+                width: 200px; 
+                height: 100px; 
+                background-color: lightblue; 
+                border: 10px solid blue; 
+                padding: 20px; 
+                margin: 0; 
+            }
+
+            .margin-box {
+                width: 200px; 
+                height: 100px; 
+                background-color: lightcoral; 
+                border: 5px solid red; 
+                padding: 20px; 
+                margin: 30px; 
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Box Model Example</h1>
+        <p>The boxes below demonstrate the CSS Box Model:</p>
+
+        <h2>Content</h2>
+        <div class="content-box">This is the content area.</div>
+
+        <h2>Padding</h2>
+        <div class="padding-box">This box has padding (20px).</div>
+
+        <h2>Border</h2>
+        <div class="border-box">This box has a border (10px).</div>
+
+        <h2>Margin</h2>
+        <div class="margin-box">This box has a margin (30px).</div>
+    </body>
+</html>
