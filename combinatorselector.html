@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selectors</title>
+    <style>
+        
+        div p {
+            color: red;
+        }
+
+        /
+        div > p {
+            font-weight: bold;
+        }
+
+        
+        h1 + p {
+            color: green;
+        }
+
+        
+        h1 ~ p {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Combinator Selectors</h1>
+    <p>Adjacent Sibling Selector</p>
+    <p>General Sibling Selector</p>
+    <div>
+        <p>Descendant Selector</p>
+        <p>Child Selector</p>
+    </div>
+</body>
+</html>
