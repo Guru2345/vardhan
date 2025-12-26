@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>set methods</h1>
+        <p id="demo"></p>
+        <script>
+            const letters=new Set(["a","b","c"]);
+            letters.add("d");
+            letters.delete("a");
+            document.getElementById("demo").innerHTML="Set has 'b': " + letters.has("b") + "<br>";
+            document.getElementById("demo").innerHTML += "Set size: " + letters.size + "<br>";
+            letters.clear();
+            document.getElementById("demo").innerHTML += "Set size after clear: " + letters.size;
+            letters.entries(); // returns an iterator with [value, value] pairs
+            letters.forEach(function(value) {
+                console.log(value);
+            });
+        </script>
+    </body>
+</html>
