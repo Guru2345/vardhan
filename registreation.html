@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <head>
+        <title>This is My Registration Form</title>
+    </head>
+    <body>
+        <h1>This is My Registration</h1>
+        <form action="#" method="post">
+            <table border="1" cellspacing="1" cellpadding="1">
+                <tr>
+                    <td><label for="name">Full Name</label></td>
+                    <td><input type="text" id="name" name="full_name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" id="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age</label></td>
+                    <td><input type="number" id="age" name="age" min="1" max="100" required></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobbies</td>
+                    <td>
+                        <input type="checkbox" id="reading" name="hobbies" value="reading">
+                        <label for="reading">Reading</label>
+                        <input type="checkbox" id="sports" name="hobbies" value="sports">
+                        <label for="sports">Sports</label>
+                        <input type="checkbox" id="music" name="hobbies" value="music">
+                        <label for="music">Music</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country</label></td>
+                    <td>
+                        <select id="country" name="country">
+                            <option value="canada">Canada</option>
+                            <option value="japan">Japan</option>
+                            <option value="america">America</option>
+                            <option value="india">India</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>
+                        <textarea id="address" name="address" rows="4" cols="30" placeholder="Enter your address"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
