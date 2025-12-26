@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <head>
+        <title>This is Regex Expression</title>
+    </head>
+    <body>
+        <h6>Validate Email Method and Function</h6>
+        <script>
+            function validateEmailMatch(email) {
+                let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                return emailPattern.test(email);
+            }
+
+            document.writeln(validateEmailMatch("guruva@w.com") + "<br>");
+            document.writeln(validateEmailMatch("guruvardhan@.com"));
+        </script>
+    </body>
+</html>
