@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pastel Wave Background</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(to bottom, #b0ece5, #c6f7f0); /* Light pastel teal */
+      overflow: hidden;
+    }
+
+    .wave1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 150%;
+      height: 50%;
+      background: linear-gradient(90deg, #ffa38f, #b8f2e1); /* Coral to green blend */
+      border-bottom-left-radius: 50% 30%;
+      border-bottom-right-radius: 50% 30%;
+      transform: rotate(-5deg) scale(1.2);
+      opacity: 0.7;
+    }
+
+    .wave2 {
+      position: absolute;
+      top: 30%;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      background: linear-gradient(to right, #a5e9e1, #d1fbf6); /* Light sea green */
+      border-top-left-radius: 50% 40%;
+      border-top-right-radius: 50% 40%;
+      opacity: 0.5;
+    }
+
+    .wave3 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 40%;
+      background: linear-gradient(to top, #ccf9f3, #e2fefa); /* Bottom soft fade */
+      border-top-left-radius: 50% 20%;
+      border-top-right-radius: 50% 20%;
+      opacity: 0.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="wave1"></div>
+  <div class="wave2"></div>
+  <div class="wave3"></div>
+</body>
+</html>
