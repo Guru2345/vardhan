@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css model.html">
+        <style>
+            body{
+                background-color: aqua;
+            }
+            h1{
+                color: brown;
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font: size 1000px;
+            }
+            #paral{
+                text-align: center;
+                color: red;
+            }
+            .center{
+                text-align: center;
+                color: yellowgreen;
+            }
+            p.center{
+                text-align: center;
+                color: blue;
+            }
+            *{
+                text-align: center;
+                color: bisque;
+            }
+            h1,h2,p{
+                text-align: center;
+                color: blueviolet;
+            }
+            body{
+                background-image: url(tcs\ web.jpg);
+                background-attachment: fixed;
+                background-position: left;
+                margin-left: 10px;
+                background-repeat: no-repeat;
+            }
+            div{
+                margin-top: auto;
+                color: black;
+                width: 20px
+            }
+            div{
+                margin-left: auto;
+                color: black;
+                width: 20px
+            }
+            div{
+                margin-right: auto;
+                color: black;
+                width: 20px
+            }
+            div{
+                margin-bottom: auto;
+                color: black;
+                width: 20px
+            }
+            p{
+                border: 1px solid black;
+                background-color: lightblue;
+                padding-top: 50px;
+                padding-left: 30px;
+                padding-right: 40px;
+                padding-bottom: 40px;
+            }
+            h2{
+                background-color: lightgrey;
+                width: 300px;
+                border: 20px solid burlywood;
+                border: 40px dashed chocolate;
+                border: 60px dotted  coral;
+                border: 80px double darkcyan;
+                padding: 40px;
+                margin: auto;
+            }
+            o1{
+                background-color: lightgreen;
+                padding: 20px;
+                color: darkblue;
+                margin: auto;
+            }
+            o1 li{
+                background-color: lightsalmon;
+                padding: 20px;
+                color: red;
+                margin: auto;
+            }
+            ul{
+                background-color:gray;
+                padding: 20px;
+                color: white;
+                margin: auto;
+            }
+            ul li{
+                background-color:lightcoral;
+                padding: 20px;
+                color: darkblue;
+                margin: auto;
+            }
+            table,th,td{
+                border: 3px solid blue;
+            }
+            div.static{
+                position: static;
+                border: 1px solid blue;
+            }
+            div.relative{
+                position: inherit;
+                left: 30px;
+                border: 4px solid pink;
+            }
+            div.sticky{
+                position:sticky;
+                top: auto;
+                padding: 0px;
+                background-color: brown;
+                border: 20px solid red;
+            }
+            img{
+                position: absolute;
+                left: 0px;
+                top: opx;
+                z-index: -1;
+            }
+            div{
+            background-color: coral;
+                width: 20px;
+                height: 30px;
+                border: 20px solid black;
+                overflow: scroll;
+            }
+            div ~p{
+                background-color:yellow;
+            }
+             div +p{
+                background-color:blue;
+            }
+            a:link{
+            color: blueviolet;
+            }
+            a:hover{
+                color: hotpink;
+            }
+            a:visited{
+                color: green;
+            }
+            a:active{
+                color: blue;
+            }
+            p::first-line{
+                color: chartreuse;
+                padding: 15px;
+                font-variant: small-caps;
+            }
+            img{
+                opacity: 0.;
+            }
+            ul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            a[target]{
+                background-color: yellow;
+            }
+            p{
+                border: 2px solid red;
+            }
+            strong{
+                border: inherit;
+                color: blue;
+            }
+
+            #div{
+                border-radius: 25px;
+                background-color: green;
+                width: 200px;
+                height: 150px;
+            }
+            #borderimg{
+                border: 10px solid transparent;
+                padding: 15px;
+                border-image: url(tcs\ web.jpg);
+
+            }
+          #example1 {
+  background-image: url("wallpaper.jpg"), url("pattern.png");
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, no-repeat;
+  background-color: red;
+  color: aqua;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 100px;
+  height: 150px;
+}
+div{
+    color: blueviolet;
+    border: 10px solid currentColor;
+    padding: 15px;
+}
+#grad3{
+    height: 200px;
+    background-color: red;
+    background-image: linear-gradient(bottom,red,yellow);
+}
+h1{
+    text-shadow: 2px 2px 5px red;
+}
+p.test{
+    height: auto;
+    width: auto;
+    border: 1px solid antiquewhite;
+    padding: auto;
+    word-wrap: break-word;
+}
+div1{
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+#div{
+    transform: matrix(1,-0.3,0,1,0,0);
+
+} div1{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+   animation-name: myAnimation;
+   animation-duration: 4s;
+}
+@keyframes myAnimation{
+    from{
+        background-color: red;
+    }
+    to{
+        background-color: yellow;
+    }
+}
+
+
+        </style>
+    </head>
+    <body>
+        <h1>this is introduction of the css model to them</h1>
+        <p>this is the paragraph of the html</p>
+        <p id="paral">this is the paral of the id of the element</p>
+        <p class="center">this is the center of the element to them</p>
+        <p class="center">this is one way of the p center of the element to them</p>
+        <p id="paral">this is universal of the contant to them it is will be used to connect like id of the class to them</p>
+        <h2>this is the multiple of the elements will be  connect to used to them</h2>
+         <h1 style="background-color: tomato;">tomato</h1>
+        <h1 style="background-color: orange;">orange</h1>
+         <h1 style="background-color: dodgerblue;">dodgerblue</h1>
+          <h1 style="background-color: mediumseagreen;">mediumseagreen</h1>
+           <h1 style="background-color: gray;">gray</h1>
+            <h1 style="background-color: violet;">violet</h1>
+            <h1 style="border: 2px solid tomato;">hello charan</h1>
+            <h1 style="border-style: dotted solid blue;">this is dashed line</h1>
+            <div>this is margin of the content to them</div>
+            <p>this is the padding of the content used to convert to them using in both of the left,right,bottom,top using widtg also to them</p>
+            <h2>this is the box of the model of the content used to them it is used of the border,padding,content,margin will be used to them</h2>
+            <p>this is the awesome icons to hem</p>
+            <i class="fas fa-cloud"style="font-size=24px;"></i>
+            <ol>
+                <li>coffee</li>
+                <li>tea</li>
+                <li>milk</li>
+            </ol>
+              <ul>
+                <li>coffee</li>
+                <li>tea</li>
+                <li>milk</li>
+            </ul>
+            <h4>this is the table of the content to them</h4>
+            <table>
+                <tr>
+                <th>
+                    name
+                </th>
+                <th>roll number</th>
+                </tr>
+                <tr>
+                    <td>
+                        vardhan
+                    </td><td>556</td>
+                </tr>
+                <tr>
+                    <td>guru</td>
+                    <td>556</td>
+                </tr>
+            </table>
+            <p>this is the static block of the content to them</p>
+            <div class="static">this is the static block using position</div>
+            <p>this is the relative position to them</p>
+            <div class="relative">this is the relative position to them</div>
+            <p>this is used to sticky of the position </p>
+            <div class="sticky">i have a position relative to them</div>
+            <h5>this is the hi guruvardhan how are you it is used will be convert of the position to them it will be covert to them</h5>
+            <img src="aits logo.jpg">
+            <h4>this is the image of padding to them convert of z index woill be used to them</h4>
+            <div>this is the auto scroll of the content to them is the mani data will be content to them it will be used to convert to them</div>
+            <div><p>this is the sequent slibing of the window to them</p></div>
+            <p>the paragraph of the content</p>
+            <code>this is the code of the content</code>
+            <p>this is the paragraph oof the ending content</p>
+            <h2>styling based on the link to provided</h2>
+            <p><b><a href="guruva.html">this is guruva link</a></b></p>
+            <p>this is provided to link on the provided to them</p>
+            <p>this is the first kine of the pseduo code of the letter to them</p>
+            <h5>this is the opacity if the used to chabging of the image to them</h5>
+            <h5>the image size is 50</h5>
+            <img src="tcs web.jpg" alt="forest" width="170" height="100">
+            <h2>this is link to provided on the </h2>
+            <ul>
+                <li><a href="#home">home</a></li>
+                 <li><a href="#news">news</a></li>
+                  <li><a href="#contact">contant</a></li>
+            </ul>
+            <p>this is the target of the background to them</p>
+            <a href="table.html" target="_blank">table</a>
+            <a href="ttable.html" target="_blank">ttable</a>
+            <p>this is usec to paragraph of <strong>inherit</strong> method to used to them</p>
+            <div id="div">this is the differnt color of the radius to them hi this is guru vardhan tell me one thi g what about  you know tell me what need to hoew to tell me where we go to how to go tell me one thing to the this is i forgot who are tell me one thing to me</div>
+        <p id="borderimg">this is the invistation of the well come to differnt way to them</p>
+    <div id="example1">
+        <h1>this is the back ground color to them</h1>
+        <p>this is the beautiful of the picture to them</p>
+    </div>  
+    <div>this is the currentColor used to create to them</div> 
+    <h5>this is the lenear capacity to used to them</h5>
+    <div id="grad3">this is the linear gradient</div>
+    <h1>this is the text shadow yo them</h1> 
+<p class="test">this is the paragrapg of thewrap property to them</p>
+<div id="div">matrix form</div>
+<div></div>
+<p><b>note</b>this is the animation of the content</p>
+</body>
+</html>
