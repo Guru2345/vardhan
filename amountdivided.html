@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <meta charset="UTF-8" /> 
+    <title>title</title> 
+</head>
+
+
+<body> 
+    <p id="output">    </p> 
+    <script> 
+        let amount=parseFloat(prompt("Enter amount: ")); 
+        let hundreds,fifties,tens,twos,ones; 
+        let result=""; 
+ 
+        if (amount > 0) { 
+        hundreds = Math.floor(amount/100); 
+        amount %= 100; 
+ 
+        if(hundreds)  
+            result += hundreds+" x 100's <br>";         
+        fifties = Math.floor(amount / 50); 
+        amount %= 50; 
+        if(fifties)  
+            result += fifties+" x 50's <br>"; 
+        tens = Math.floor(amount / 10); 
+        amount %= 10; 
+        if(tens)  
+            result += tens+" x 10's <br>"; 
+        twos = Math.floor(amount / 2); 
+        amount %= 2; 
+        if(twos)  
+        result += twos+" x 2's <br>"; 
+        ones = Math.floor(amount);  
+        if(ones)  
+            result += ones+" x 1's <br>";  
+        document.getElementById("output").innerHTML=result; 
+        } 
+        else{ 
+            document.getElementById("output").innerHTML="Please enter a valid amount"; 
+        } 
+    </script> 
+</body> 
+</html> 
+ 
+ 
