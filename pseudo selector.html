@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <title>css pseudo class seletor</title>
+        <style>
+            button:hover{
+                background-color: blue;
+                color: white;
+            }
+            button:active{
+                background-color: red;
+
+            }
+            input:focus{
+                border: 2px solid gray;                background-color: lightgreen;
+            background-color:blue;
+            }
+            p:first-child{
+                color: red;
+            }
+            li::nth-child(odd){
+                background-color: lightgreen;
+            }
+            li::nth-child2(odd){
+                columns: blue;
+            }
+        </style>
+        </head>
+        <body>
+            <h2>css pseudo-clss example</h2>
+            <button>hover or click me</button>
+            <br><br>
+            <input type="text" name="username" placeholder="Enter your name">
+
+            <br>
+            <div>
+            <p>this is the first paragraph</p>
+            <p>middle paragraph</p>
+            <p>this the last paragraph</p></div>
+            <ul>
+                <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+            </ul>
+        </body>
+</html>
