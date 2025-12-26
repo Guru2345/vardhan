@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>The Document Object</h1>
+        <h2>The create attribute () and set attributenode() method</h2>
+        <a id="my anchor"> w3school.com</a>
+        <p>click "add"to add a href attribute to the anchor above</p>
+        <button on click="my fuction ()">add</button>
+        <script>
+            fuction myFuction(){
+            const attr = document.createAttribute("href");
+            attr.value="https://www.w3schools.com";
+            document.getElementById("my anchor").SetAttributeNode(attr);
+            }
+        </script>
+    </body>
+</html>
