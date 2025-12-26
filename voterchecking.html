@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Voter Eligibility</title>
+        <style>
+            table {
+                width: 50%;
+                margin: 20px auto;
+                border-collapse: collapse;
+            }
+            table, th, td {
+                border: 1px solid black;
+            }
+            th, td {
+                padding: 10px;
+                text-align: center;
+            }
+            h2 {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Voter Eligibility Check</h2>
+        <button onclick="askVoterDetails()">Check Voter Eligibility</button>
+        <br><br>
+        
+        <table id="voterTable">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Eligibility</th>
+            </tr>
+        </table>
+        <script>
+            function askVoterDetails() {
+                
+                var name = prompt("Please enter your name:");
+                var age = prompt("Please enter your age:");
+
+                
+                if (isNaN(age) || age === "") {
+                    alert("Please enter a valid number for age.");
+                    return;
+                }
+
+                
+                var eligibility = (parseInt(age) >= 18) ? "Eligible to vote" : "Not eligible to vote";
+
+                
+                var table = document.getElementById("voterTable");
+                var newRow = table.insertRow(table.rows.length); // Add a new row to the table
+
+                
+                var cell1 = newRow.insertCell(0);
+                var cell2 = newRow.insertCell(1);
+                var cell3 = newRow.insertCell(2);
+                cell1.textContent = name;
+                cell2.textContent = age;
+                cell3.textContent = eligibility;
+            }
+        </script>
+    </body>
+</html>
