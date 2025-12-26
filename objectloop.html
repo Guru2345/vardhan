@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <title>Object Loop Example</title> 
+</head> 
+<body> 
+    <h1>Object Loop Example</h1> 
+    <h3>Output:</h3> 
+    <div id="output"></div> 
+ 
+    <script> 
+        const person = { name: "John Doe", age: 30, occupation: "Software Developer", country: "USA" }; 
+ 
+        let output = ""; 
+        output += "Using for-in Loop: <br>"; 
+        for (let key in person) { 
+            output += `${key}: ${person[key]}<br>`; 
+        } 
+        output += "<br>"; 
+        output += "Using forEach Method: <br>"; 
+        Object.values(person).forEach(value => { 
+            output += `${value}<br>`; 
+        }); 
+        output += "<br>"; 
+        output += "Using for-of Loop: <br>"; 
+        for (let [key, value] of Object.entries(person)) { 
+            output += `${key}: ${value}<br>`; 
+        } 
+        document.getElementById("output").innerHTML = output; 
+    </script> 
+</body> 
+</html> 
+ 
