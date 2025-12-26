@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Weekday Display</title> 
+</head> 
+ <body> 
+    <p id="output"></p> 
+ <script> 
+        function getDayOfWeek() { 
+            var dayNumber = parseInt(prompt("Enter a number (0-6):")); 
+            let results; 
+             
+            switch(dayNumber) { 
+                case 0: 
+                    results="Sunday"; 
+                    break; 
+                case 1: 
+                    results="Monday"; 
+                    break; 
+                case 2: 
+                    results="Tuesday"; 
+                    break; 
+                case 3: 
+                    results="Wednesday"; 
+                    break; 
+                case 4: 
+                    results="Thursday"; 
+                    break; 
+                case 5: 
+                    results="Friday"; 
+                    break; 
+                case 6: 
+                    results="Saturday"; 
+                    break; 
+                default: 
+                results="Invalid input. Enter a number between 0 and 6."; 
+            } 
+            document.getElementById("output").innerHTML=results; 
+        } 
+        
+        getDayOfWeek(); 
+    </script> 
+</body> 
+</html> 
+ 
+ 
+ 
+ 
+ 
