@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denomination Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input, button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Denomination</h1>
+    <label for="amount">Enter Amount:</label>
+    <input type="number" id="amount" placeholder="Enter amount" />
+    <button onclick="calculateDenominations()">Calculate</button>
+    
+    <h2>Denominations:</h2>
+    <p id="result"></p>
+
+    <script>
+        function calculateDenominations() {
+            let amount = parseInt(document.getElementById('amount').value);
+            if (isNaN(amount) || amount <= 0) {
+                document.getElementById('result').innerHTML = "Please enter a valid amount greater than 0.";
+                return;
+            }
+
+            let hundreds = Math.floor(amount / 100);
+            amount %= 100;
+            let fifties = Math.floor(amount / 50);
+            amount %= 50;
+            let tens = Math.floor(amount / 10);
+            amount %= 10;
+            let twos = Math.floor(amount / 2);
+            amount %= 2;
+            let ones = amount;
+
+            document.getElementById('result').innerHTML = `
+                100: ${hundreds}<br>
+                50: ${fifties}<br>
+                10: ${tens}<br>
+                2: ${twos}<br>
+                1: ${ones}
+            `;
+        }
+    </script>
+</body>
+</html>
