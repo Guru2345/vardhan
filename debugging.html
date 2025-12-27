@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <h1>debugging JavaScript</h1>
+    <p id="demo"></p>
+    <p>this is the debugging of the example first we execute of the function after will be executing of the paragraph </p>
+    <script>
+        function myFunction() {
+            let x = 10;
+            let y = 20;
+            let z = x + y;
+            return z;
+        }
+        debugger;
+        document.getElementById("demo").innerHTML = myFunction();
+        </script>
+    </body>
+</html>
