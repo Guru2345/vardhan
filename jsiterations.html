@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JavaScript Iterations</h1>
+        <p id="demo"></p>
+        <script>
+            const numbers = [10, 20, 30];
+            let text = "";
+            for (const num of numbers) {
+                text += num + "<br>";
+            }
+            document.getElementById("demo").innerHTML = text;
+        </script>
+         <script>
+            const fruits = ["apple", "banana", "cherry"];
+            let texts = "";
+            fruits.forEach(function(fruit) {
+                texts += fruit + "<br>";
+            });
+            document.getElementById("demo").innerHTML += texts;
+        </script>
+         <script>
+            const colors = ["red", "green", "blue"];
+            let textss = "";
+            for (let i = 0; i < colors.length; i++) {
+                textss += colors[i] + "<br>";
+            }
+            document.getElementById("demo").innerHTML += textss;
+        </script>
+    </body>
+</html>
