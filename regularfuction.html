@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JavaScript regularfuction using this keyword</h1>
+        <p id="demo"></p>
+        <p>this example demonstrate that in a regular fuction the this keyword represents differnt objects depending on how the fuction was call</p>
+        <button id="btn">Click Me</button>
+        <script>
+            hello=function(){
+        document.getElementById("demo").innerHTML=innerHTML+this;
+            }
+            window.addEventListener("load",hello);
+            document.getElementById("btn").addEventListener("click",hello);
+        </script>
+    </body>
+</html>
