@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JavaScript constructor</h1>
+        <p>JavaScript constructors are used to create and initialize objects.</p>
+        <p id="demo"></p>
+        <script>
+            function myFunction( arg1, arg2){
+                this.firstname=arg1;
+                this.lastname=arg2;
+            }
+            const a=new myFunction("John", "Doe");
+            document.getElementById("demo").innerHTML=a.firstname+" "+a.lastname;
+            </script>
+    </body>
+</html>''
