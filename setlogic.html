@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>set logic of the methods</h1>
+        <p id="demo"></p>
+        <script>
+            const a=new Set(['a','b','c']);
+            const b=new Set(['b','c','d']);
+            const c=a.union(b);
+            let text="";
+            for(const x of c){
+                text=text+x+"";
+            }
+            document.getElementById("demo").innerHTML=text;
+        </script>
+         <script>
+            const d=new Set(['a','b','c']);
+            const e=new Set(['b','c','d']);
+            const g=d.intersection(e);
+            let texts="";
+            for(const x of g){
+                texts=texts+x+"";
+            }
+            document.getElementById("demo").innerHTML=texts;
+             </script>
+             <script>
+            const h=new Set(['a','b','c']);
+            const l=new Set(['b','c','d']);
+            const j=h.difference(l);
+            let textss="";
+            for(const x of j){
+                textss=textss+x+"";
+            }
+            document.getElementById("demo").innerHTML=textss;
+            </script>
+             <script>
+            const k=new Set(['a','b','c']);
+            const i=new Set(['b','c','d']);
+            const m=k.symmetricDifference(i);
+            let textsss="";
+            for(const x of m){
+                textsss=textsss+x+"";
+            }
+            document.getElementById("demo").innerHTML=textsss;
+        </script>
+         <script>
+            const n=new Set(['a','b','c']);
+            const p=new Set(['b','c','d']);
+            const q=n.isSubsetOf(p);
+            document.getElementById("demo").innerHTML=q;
+        </script>
+        <script>
+            const t=new Set(['a','b','c']);
+            const s=new Set(['b','c','d']);
+            const u=t.isSupersetof(s);
+            document.getElementById("demo").innerHTML=u;
+        </script>
+    </body>
+</html>
