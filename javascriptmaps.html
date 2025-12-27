@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JavaScript Maps</h1>
+        <p id="demo"></p>
+        <script>
+            const map = new Map();
+            map.set('a', 1);
+            map.set('b', 2);
+            map.set('c', 3);
+            let text = "";
+            for (const [key, value] of map) {
+                text += key + " = " + value + "<br>";
+            }
+            document.getElementById("demo").innerHTML = map.get('a');
+            document.getElementById("demo").innerHTML = map.size;
+            map.delete('b');
+            map.clear();
+            document.getElementById("demo").innerHTML = text;
+        </script>
+         <script>
+            const myMap = new Map([
+                ['x', 10],
+                ['y', 20],
+                ['z', 30]
+            ]);
+            let texts = "";
+            myMap.forEach(function(value, key) {
+                texts += key + " -> " + value + "<br>";
+            });
+            document.getElementById("demo").innerHTML = text + texts;
+             document.getElementById("demo").innerHTML = typeof myMap;
+              document.getElementById("demo").innerHTML = myMap instanceof Map;
+        </script>
+    </body>
+</html>
