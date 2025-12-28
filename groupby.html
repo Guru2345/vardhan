@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <h1>JavaScript Object Group by Property</h1>
+            <p id="demo"></p>
+            <script>
+                const fruits=[
+                    {name:"apple",color:"red"},
+                    {name:"banana",color:"yellow"},
+                    {name:"grape",color:"purple"},
+                    {name:"lemon",color:"yellow"},
+                    {name:"cherry",color:"red"},
+                ];
+                function callMyBack({color}){
+                    return color=="yellow" ? "Ok":"Not Ok";
+                }
+                document.getElementById("demo").innerHTML=fruits.map(callMyBack);
+            </script>
+        </body>
