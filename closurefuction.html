@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <h1>javascript closure function</h1>
+    <p>counting with a local variable</p>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML=count();
+        function count() {
+            let counter=0;
+            function plus(){
+                counter=counter+1;}
+                plus();
+                return counter;
+            }
+        
+            </script>
+    </body>
+</html>
