@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JavaScript deconstructing Assignment</h1>
+        <p>Deconstructing assignment allows you to unpack values from arrays, or properties from objects, into distinct variables.</p>
+   <p id="demo"></p>
+   <script>
+   const person={
+    firstname:"guru",
+    lastname:"vardhan",
+    age:22,
+   };
+   let {firstname,lastname,age,college="aits"}=person;
+   document.getElementById("demo").innerHTML=firstname + " " + lastname + " " + age + " " + college;
+   </script>
+    </body>
+</html>
