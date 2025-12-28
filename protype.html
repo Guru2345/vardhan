@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>javascript prototype example</h1>
+        <p id="demo"></p>
+        <script>
+            let person=function(firstname,lastname,age){
+                this.firstname=firstname;
+                this.lastname=lastname;
+                this.age=age;
+            }
+            let g=new person("guru","vardhan",22)
+            person.prototype.eyecolor="brown";
+            document.getElementById("demo").innerHTML=g.firstname + " " + g.lastname + " " + g.age + " " + g.eyecolor;
+        </script>
+    </body>
+</html>
