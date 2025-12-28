@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>java script object defination example</p>
+        <p id="demo"></p>
+        <script>
+            const person={
+                firstname:"guru",
+                lastname:"vardhan",
+                age:22,
+                eyecolor:"brown",
+            }
+            const man=Object.create(person);
+            man.firstname="harsha";
+            document.getElementById("demo").innerHTML=person.firstname + " " + person.age + " and " + man.firstname;
+        </script>
+</html>
