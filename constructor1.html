@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JavaScript Constructor Functions</h1>
+        <p>A constructor function is used to create multiple objects of the same type.</p>
+        <p id="demo"></p>
+        <script>
+            const person=function(firstname,lastname,age,college){
+                this.firstname=firstname;
+                this.lastname=lastname;
+                this.age=age;
+                this.college="aits";
+            }
+            const person1=new person("guru","vardhan",22);
+            const person2=new person("harsha","vardhan",20);
+            document.getElementById("demo").innerHTML=person2.firstname + " " + person1.lastname + " " + person1.age + " " + person1.college;
+        </script>
+        </body>
+</html>
