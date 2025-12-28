@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>JavaScript Object.entries() Method</h1>
+    <p>The Object.entries() method returns an array of a given object's own enumerable string-keyed property [key, value] pairs.</p>
+<p id="demo"></p>
+<script>
+    const fruit=[
+        ["banana",500],
+        ["apple",200],
+        ["mango",300],
+    ];
+    const fruits=[["apple",400],["banana",500],["orange",400]];
+    const fruitEntries=Object.assign(fruit,fruits)
+    document.getElementById("demo").innerHTML=fruitEntries;
+</script>
+</body>
+</html>
