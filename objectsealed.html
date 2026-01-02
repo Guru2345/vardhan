@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Objects</h1>
+<h2>The Object.isSealed() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create Object
+const person = {firstName:"John", lastName:"Doe"};
+
+// Seal Object
+Object.seal(person);
+
+// This will return true
+document.getElementById("demo").innerHTML =Object.isSealed(person);
+</script>
+
+</body>
+</html>
