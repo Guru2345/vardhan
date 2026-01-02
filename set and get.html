@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>this is set and getter methods used in JavaScript</title>
+    </head>
+    <body>
+    <h1>this is set and getter methods used in JavaScript</h1>
+    <p id="demo"></p>
+    <script>
+       const person = {
+  firstName: "John",
+  lastName: "Doe",
+  language: "",
+  set lang(lang) {
+    this.language =lang.toUpperCase();
+  }
+};
+
+// Set an object property using a setter:
+person.lang = "en";
+
+// Display data from the object:
+document.getElementById("demo").innerHTML = person.language;
+    </script>
+    </body>
+</html>
