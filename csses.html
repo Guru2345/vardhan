@@ -1,27 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz APP - EASY TUTORIALS</title>
-    <link rel="stylesheet" href="csses.css">
-    <script defer src="script.js"></script>
-  </head>
-  <body>
-    <div class="app">
-      <h1>Quiz APP</h1>
-      <p class="intro">Welcome — start the quiz when ready.</p>
-      <button id="startBtn" class="btn primary">Start Quiz</button>
-
-      <div class="quiz" id="quiz" hidden>
-        <h2 id="question">Question goes here</h2>
-        <div class="answers">
-          <button class="answer">Answer 1</button>
-          <button class="answer">Answer 2</button>
-          <button class="answer">Answer 3</button>
-          <button class="answer">Answer 4</button>
-        </div>
-      </div>
-    </div>
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz APP - EASY TUTORIALS</title>
+        <link rel="stylesheet" href="csses.css">
+    </head>
+    <body>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Arial, sans-serif;
+}
+body{
+    background-color: #001e4d;
+}
+.app{
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+.app h1{
+    font-weight: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 10px;
+}
+.quizz{
+    padding: 20px 0px;
+}
+.quizz h2{
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+}
+.btn{
+    background-color: #ffffff;
+    color: #001e4d;
+    border: 2px solid #001e4d;
+    font-weight: 500;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+}
+</style>
+    </body>
 </html>
