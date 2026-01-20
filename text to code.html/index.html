@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text to Code Converter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background:#0f172a;
+      color:#e5e7eb;
+      margin:0;
+      padding:20px;
+    }
+    textarea, select {
+      width:100%;
+      padding:10px;
+      margin:10px 0;
+      border-radius:6px;
+      border:1px solid #333;
+      background:#111827;
+      color:#e5e7eb;
+    }
+    button {
+      margin:5px;
+      padding:10px 16px;
+      border:none;
+      border-radius:6px;
+      cursor:pointer;
+    }
+    button.primary { background:#22d3ee; color:#0f172a; }
+    button.secondary { background:#111827; color:#e5e7eb; border:1px solid #333; }
+    pre {
+      background:#111827;
+      padding:14px;
+      border-radius:8px;
+      overflow:auto;
+      max-height:400px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Text → Code Converter</h1>
+  <p>Type a prompt and select HTML, CSS, JavaScript, or All.</p>
+
+  <textarea id="prompt" placeholder="e.g., login form, navbar, table"></textarea>
+  <select id="language">
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="js">JavaScript</option>
+    <option value="all">All</option>
+  </select>
+  <div>
+    <button id="generateBtn" class="primary">Generate</button>
+    <button id="copyBtn" class="secondary">Copy</button>
+    <button id="selectBtn" class="secondary">Select All</button>
+  </div>
+
+  <pre id="output"><code>// Your code will appear here...</code></pre>
+
+  <script>
+    const outEl = document.querySelector('#output code');
+
+    function generate() {
+      const prompt = document.getElementById('prompt').value.toLowerCase();
+      const lang = document.getElementById('language').value;
+      let code = '';
+
+      // Different templates based on keywords
+      if (prompt.includes('form')) {
+        code = `<!DOCTYPE html>
+<html>
+<head><title>${prompt}</title></head>
+<body>
+  <form>
+    <label>Name:</label><input type="text"><br>
+    <label>Email:</label><input type="email"><br>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>`;
+      } else if (prompt.includes('table')) {
+        code = `<!DOCTYPE html>
+<html>
+<head><title>${prompt}</title></head>
+<body>
+  <table border="1">
+    <tr><th>ID</th><th>Name</th></tr>
+    <tr><td>1</td><td>Example</td></tr>
+  </table>
+</body>
+</html>`;
+      } else if (prompt.includes('navbar')) {
+        code = `<!DOCTYPE html>
+<html>
+<head><title>${prompt}</title></head>
+<body>
+  <nav>
+    <a href="#">Home</a> |
+    <a href="#">About</a> |
+    <a href="#">Contact</a>
+  </nav>
+</body>
+</html>`;
+      } else {
+        code = `<!DOCTYPE html>
+<html>
+<head><title>${prompt}</title></head>
+<body>
+  <div class="box">
+    <h2>${prompt}</h2>
+    <p>This is a generic block.</p>
+  </div>
+</body>
+</html>`;
+      }
+
+      outEl.textContent = code;
+    }
+
+    function copy() {
+      navigator.clipboard.writeText(outEl.textContent).then(() => {
+        alert('Code copied to clipboard!');
+      });
+    }
+
+    function selectAll() {
+      const range = document.createRange();
+      range.selectNodeContents(outEl);
+      const sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+    }
+
+    document.getElementById('generateBtn').addEventListener('click', generate);
+    document.getElementById('copyBtn').addEventListener('click', copy);
+    document.getElementById('selectBtn').addEventListener('click', selectAll);
+  </script>
+</body>
+</html>
